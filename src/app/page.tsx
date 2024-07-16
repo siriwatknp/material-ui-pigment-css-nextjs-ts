@@ -1,15 +1,15 @@
 import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material-pigment-css/Container";
-import Grid from "@mui/material-pigment-css/Grid";
-import Typography from "@mui/material/Typography";
-import Chip from "@mui/material/Chip";
+// import Grid from "@mui/material-pigment-css/Grid";
+// import Typography from "@mui/material/Typography";
+// import Chip from "@mui/material/Chip";
 
 export default function Home() {
   return (
     <main sx={{ minHeight: "100lvh", display: "grid", placeItems: "center" }}>
       <CssBaseline />
       <Container>
-        <Grid container spacing={{ xs: 2, sm: 3, md: 4 }}>
+        {/* <Grid container spacing={{ xs: 2, sm: 3, md: 4 }}>
           <Grid size={{ xs: 12, md: 6 }}>
             <Chip
               label="Available in v6"
@@ -123,7 +123,7 @@ export default function Home() {
               </li>
             </ul>
           </Grid>
-        </Grid>
+        </Grid> */}
       </Container>
     </main>
   );
