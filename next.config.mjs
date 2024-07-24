@@ -5,7 +5,7 @@ import { extendTheme } from "@mui/material";
 /** @type {import('next').NextConfig} */
 const nextConfig = {};
 
-export default withPigment(withBundleAnalyzer({ enabled: true })(nextConfig), {
+export default withPigment(withBundleAnalyzer({ enabled: false })(nextConfig), {
   theme: extendTheme({
     typography: {
       fontFamily: "var(--font-family)",

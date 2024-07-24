@@ -1,15 +1,15 @@
 import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material-pigment-css/Container";
-// import Grid from "@mui/material-pigment-css/Grid";
-// import Typography from "@mui/material/Typography";
-// import Chip from "@mui/material/Chip";
+import Grid from "@mui/material-pigment-css/Grid";
+import Typography from "@mui/material/Typography";
+import Chip from "@mui/material/Chip";
 
 export default function Home() {
   return (
     <main sx={{ minHeight: "100lvh", display: "grid", placeItems: "center" }}>
       <CssBaseline />
       <Container>
-        {/* <Grid container spacing={{ xs: 2, sm: 3, md: 4 }}>
+        <Grid container spacing={{ xs: 2, sm: 3, md: 4 }}>
           <Grid size={{ xs: 12, md: 6 }}>
             <Chip
               label="Available in v6"
@@ -41,7 +41,7 @@ export default function Home() {
                   WebkitTextFillColor: "transparent",
                 })}
               >
-                Material UI x
+                Material UI
               </span>
               Pigment CSS
             </Typography>
@@ -59,21 +59,23 @@ export default function Home() {
                   "&:not(:first-child)": {
                     marginTop: 2,
                   },
+                  "&::marker": {
+                    color: "text.primary",
+                  },
+                  "& > div": {
+                    color: "text.primary",
+                    fontSize: "1.5rem",
+                    lineHeight: 1.7,
+                  },
                 },
               }}
             >
               <li
                 sx={{
-                  "&::marker": { content: '"⚡️"', color: "text.primary" },
+                  "&::marker": { content: '"⚡️"' },
                 }}
               >
-                <Typography
-                  sx={{
-                    color: "text.primary",
-                    fontSize: "1.5rem",
-                    lineHeight: 1.7,
-                  }}
-                >
+                <Typography component="div">
                   Build-time CSS Extraction
                 </Typography>
                 <Typography>
@@ -83,18 +85,10 @@ export default function Home() {
               </li>
               <li
                 sx={{
-                  "&::marker": { content: '"🚀"', color: "text.primary" },
+                  "&::marker": { content: '"🚀"' },
                 }}
               >
-                <Typography
-                  sx={{
-                    color: "text.primary",
-                    fontSize: "1.5rem",
-                    lineHeight: 1.7,
-                  }}
-                >
-                  React Server Components
-                </Typography>
+                <Typography component="div">React Server Components</Typography>
                 <Typography>
                   Material UI provides a separate set of layout components that
                   integrated with Pigment CSS to support React Server
@@ -103,27 +97,19 @@ export default function Home() {
               </li>
               <li
                 sx={{
-                  "&::marker": { content: '"📦"', color: "text.primary" },
+                  "&::marker": { content: '"📦"' },
                 }}
               >
-                <Typography
-                  variant="subtitle1"
-                  sx={{
-                    color: "text.primary",
-                    fontSize: "1.5rem",
-                    lineHeight: 1.7,
-                  }}
-                >
+                <Typography component="div" variant="subtitle1">
                   Emotionless
                 </Typography>
                 <Typography>
-                  Emotion will be removed from the final bundle, saved at least
-                  8kB.
+                  Emotion will be removed from the final bundle, saved ~15kB.
                 </Typography>
               </li>
             </ul>
           </Grid>
-        </Grid> */}
+        </Grid>
       </Container>
     </main>
   );
