@@ -8,7 +8,7 @@ const nextConfig = {};
 export default withPigment(withBundleAnalyzer({ enabled: false })(nextConfig), {
   theme: extendTheme({
     typography: {
-      fontFamily: "var(--font-family)",
+      fontFamily: "var(--font-roboto)",
     },
   }),
   transformLibraries: ["@mui/material"],
